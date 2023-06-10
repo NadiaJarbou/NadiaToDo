@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./todo.css">
+    <script src="main.js"></script>
+    <title>To-Do List</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="img1"></div>
+        <div class="todo-app">
+            <img src="imges/depositphotos_136463420-stock-illustration-boy-showing-perfect-test-results.jpg" alt="">
+            <h1> My Todos... </h1>
+        </div>
+        <div class="row">
+            <input type="text" id="inputbox" placeholder=" To Do ..">
+            <button onclick="add()">Add</button>
+        </div>
+        <div class="task">
+            <table id="table">
+                <tr>
+                    <th></th>
+                    <th>#</th>
+                    <th id="desc">Description</th>
+                    <th id="date">Date</th>
+                    <th>Status</th>
+                    <th id="del">Remove</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
