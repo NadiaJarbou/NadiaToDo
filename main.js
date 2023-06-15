@@ -88,11 +88,15 @@ function updateRowsIndex() {
 function handleClick(el) {
     let parentTr = el.closest("tr");
     let description = document.getElementById(parentTr.id).childNodes[2];
+    let status = document.getElementById(parentTr.id).childNodes[4];
     if (el.checked) {
         description.style.textDecoration = "line-through";
+        status.innerHTML= "Completed";
+
     }
     else {
         description.style.textDecoration = "none";
+        status.innerHTML= "In progress";
     }
 }
 
