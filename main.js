@@ -17,7 +17,6 @@ function add() {
                 let table = document.getElementById('table');
                 let tr = document.createElement('tr');
                 let tasksNum = table.rows.length;
-                tr.id = 'tr' + tasksNum;
 
                 //Creat checkbox element
                 let checkTd = document.createElement('td');
